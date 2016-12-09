@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{F5D738A9-998B-4EBF-B5C9-B64514818835}</ProjectGuid>
+    <ProjectGuid>{57E60B23-A0A3-4F21-A992-68445557C09B}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
     <RootNamespace>Agendamiento.iOS</RootNamespace>
@@ -140,7 +140,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Agendamiento\Agendamiento.csproj">
-      <Project>{a643ce4e-7995-41b2-a151-e0c88ec5482b}</Project>
+      <Project>{01c44fa8-657f-4ede-bad8-0c343eeb23f1}</Project>
       <Name>Agendamiento</Name>
     </ProjectReference>
   </ItemGroup>

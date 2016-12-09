@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C434F389-8FB4-4B05-9941-604DA1BBE9B5}</ProjectGuid>
+    <ProjectGuid>{54494F83-4F19-4506-9B8D-15E8DBF4B736}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Agendamiento.WinPhone</RootNamespace>
@@ -114,7 +114,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Agendamiento\Agendamiento.csproj">
-      <Project>{a643ce4e-7995-41b2-a151-e0c88ec5482b}</Project>
+      <Project>{01c44fa8-657f-4ede-bad8-0c343eeb23f1}</Project>
       <Name>Agendamiento</Name>
     </ProjectReference>
   </ItemGroup>
