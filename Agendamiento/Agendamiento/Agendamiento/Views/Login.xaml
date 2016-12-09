@@ -2,7 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Agendamiento.Views.Login">
+
   <StackLayout Padding="10,30,10,10" Spacing="10">
+    
     <Label Text="Agendamiento"
            Font="30"
            VerticalOptions="Center"
@@ -24,6 +26,11 @@
            HorizontalOptions="Start"
            />
     <Entry x:Name="PasswordEntry" IsPassword="true"  Placeholder="Email"></Entry>
+    <ActivityIndicator
+    x:Name="waitActivityIndicator"
+    VerticalOptions="Center"
+    HorizontalOptions="Center"
+   />
     <Button x:Name="EnterButton" Text="Ingresar" Clicked="enterButton_Clicked"></Button>
   </StackLayout>
 

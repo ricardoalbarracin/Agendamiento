@@ -14,11 +14,11 @@ namespace Agendamiento.Models
             
         }
 
-        public string InitDataAsync()
+        public Task<string> InitDataAsync()
         {
             HttpClient client = new HttpClient();
             Task<string> json = client.GetStringAsync("http://weblayer.us-east-1.elasticbeanstalk.com/account/UserValidate");
-            return json.Result;
+            return json;
         }
 
     }

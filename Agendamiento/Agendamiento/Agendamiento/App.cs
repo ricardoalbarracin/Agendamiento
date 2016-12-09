@@ -12,7 +12,7 @@ namespace Agendamiento
         public App()
         {
             // The root page of your application
-            MainPage = new Login();
+            MainPage = new NavigationPage( new Login());
         }
 
         protected override void OnStart()

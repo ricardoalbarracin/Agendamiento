@@ -18,9 +18,15 @@ namespace Agendamiento.Views
 
         private async void enterButton_Clicked(object sender, EventArgs e)
         {
+            waitActivityIndicator.IsRunning = true;
+            EnterButton.IsEnabled = false;
             EjemploModel a = new EjemploModel();
-            string result = a.InitDataAsync();
-            DisplayAlert("", result, "cancelar");
+            string result =await a.InitDataAsync();
+            
+
+            waitActivityIndicator.IsRunning = false;
+            EnterButton.IsEnabled = true;
+            await Navigation.PushAsync(new Agendas());
         }
     }
 }
