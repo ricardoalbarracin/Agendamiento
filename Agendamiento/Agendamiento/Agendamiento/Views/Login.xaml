@@ -1,19 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:local="clr-namespace:Agendamiento;assembly=Agendamiento"
              x:Class="Agendamiento.Views.Login">
 
-  <StackLayout Padding="10,30,10,10" Spacing="10">
+  <StackLayout >
+   
+    <Image Source="{local:ImageResource Agendamiento.fondo.jpg}" Opacity="0.7" />
+    <StackLayout Padding="10,30,10,10" Spacing="10" >
     
-    <Label Text="Agendamiento"
-           Font="30"
-           VerticalOptions="Center"
-           HorizontalOptions="Center"
-           />
-    <Label Text="Ingreso al sistema"
-           VerticalOptions="Center"
-           HorizontalOptions="Center"
-           />
+    
+    
     <Label
            Text="Usuario"
            VerticalOptions="Center"
@@ -33,5 +30,5 @@
    />
     <Button x:Name="EnterButton" Text="Ingresar" Clicked="enterButton_Clicked"></Button>
   </StackLayout>
-
+  </StackLayout>
 </ContentPage>

@@ -10,9 +10,10 @@ namespace Agendamiento.Views
 {
     public partial class Agendas : ContentPage
     {
-        public Agendas()
+        public Agendas(string datos)
         {
             InitializeComponent();
+            label.Text = datos;
         }
     }
 }
