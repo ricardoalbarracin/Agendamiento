@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using Agendamiento.Views;
 using Xamarin.Forms;
 
 namespace Agendamiento
@@ -11,9 +11,7 @@ namespace Agendamiento
     {
         public App()
         {
-           
-
-            MainPage = new MainPage();
+            MainPage = new Login();
         }
 
         protected override void OnStart()
