@@ -19,13 +19,20 @@ namespace Agendamiento.Views
 
         private async void enterButton_Clicked(object sender, EventArgs e)
         {
-            waitActivityIndicator.IsRunning = true;
+            //waitActivityIndicator1.IsVisible = true;
+            //waitActivityIndicator2.IsRunning = true;
             EnterButton.IsEnabled = false;
+            string result="";
             EjemploModel a = new EjemploModel();
-            string result =await a.InitDataAsync();
-            
+            try
+            {
+                 result = await a.InitDataAsync();
+            }
+            catch (Exception)
+            {
 
-            waitActivityIndicator.IsRunning = false;
+            }
+            //waitActivityIndicator.IsRunning = false;
             EnterButton.IsEnabled = true;
             //await Navigation.PushAsync(new Agendas(result));
             App.Current.MainPage = new NavigationPage(new Agendas(result));

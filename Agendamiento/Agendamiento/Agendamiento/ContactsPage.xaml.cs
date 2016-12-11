@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace Agendamiento.Views
+namespace Agendamiento
 {
-    public partial class Agendas : MasterDetailPage
+    public partial class ContactsPage : ContentPage
     {
-        public Agendas(string datos)
+        public ContactsPage()
         {
             InitializeComponent();
-            //label.Text = datos;
         }
     }
 }

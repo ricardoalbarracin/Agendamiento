@@ -12,8 +12,15 @@ namespace Agendamiento
         public App()
         {
             // The root page of your application
-            MainPage = new NavigationPage( new Login());
-            
+            MainPage = new Agendas("ss");
+            //if ((Current.Properties.ContainsKey("IsLoged")) && ((bool)Application.Current.Properties["IsLoged"]))
+            //    MainPage = new NavigationPage(new Agendas(""));
+            //else
+            //{
+            //    MainPage = new NavigationPage(new Login());
+            //    Current.Properties["IsLoged"] = true;
+            //}
+
         }
 
         protected override void OnStart()

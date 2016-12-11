@@ -3,32 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                xmlns:local="clr-namespace:Agendamiento;assembly=Agendamiento"
              x:Class="Agendamiento.Views.Login">
-
-  <StackLayout >
-   
-    <Image Source="{local:ImageResource Agendamiento.fondo.jpg}" Opacity="0.7" />
     <StackLayout Padding="10,30,10,10" Spacing="10" >
-    
-    
-    
-    <Label
+      <Label
            Text="Usuario"
            VerticalOptions="Center"
            HorizontalOptions="Start"
            />
-    <Entry x:Name="UserEntry" Placeholder="Email"></Entry>
-    <Label
-           Text="Contraseña"
-           VerticalOptions="Center"
-           HorizontalOptions="Start"
-           />
-    <Entry x:Name="PasswordEntry" IsPassword="true"  Placeholder="Email"></Entry>
-    <ActivityIndicator
-    x:Name="waitActivityIndicator"
-    VerticalOptions="Center"
-    HorizontalOptions="Center"
-   />
-    <Button x:Name="EnterButton" Text="Ingresar" Clicked="enterButton_Clicked"></Button>
-  </StackLayout>
+    <Entry x:Name="UbbserEntry" Placeholder="Email"></Entry>
+    
+    
+      <Entry x:Name="PasswordEntry"
+           Placeholder="Contraseña">
+    </Entry>
+    <Button x:Name="EnterButton" Text="Ingresar" Clicked="enterButton_Clicked" TextColor="White" BackgroundColor ="#2196F3" ></Button>
   </StackLayout>
 </ContentPage>

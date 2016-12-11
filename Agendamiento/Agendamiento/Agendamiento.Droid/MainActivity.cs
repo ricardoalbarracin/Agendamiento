@@ -14,7 +14,7 @@ namespace Agendamiento.Droid
     {
         protected override void OnCreate(Bundle bundle)
         {
-            TabLayoutResource = Resource.Layout.Tabbar;
+            TabLayoutResource = Resource.Layout.tabs;
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);
