@@ -35,7 +35,7 @@ namespace Agendamiento.Views
             //waitActivityIndicator.IsRunning = false;
             EnterButton.IsEnabled = true;
             //await Navigation.PushAsync(new Agendas(result));
-            App.Current.MainPage = new NavigationPage(new Agendas(result));
+            App.Current.MainPage = new Agendas(result);
         }
     }
 }

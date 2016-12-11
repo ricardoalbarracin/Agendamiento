@@ -37,9 +37,9 @@ namespace Agendamiento
         public string Icon { get; set; }
         public MenuType MenuType { get; set; }
     }
-    public partial class MasterPage : ContentPage
+    public partial class Menu : ContentPage
     {
-        public MasterPage()
+        public Menu()
         {
             InitializeComponent();
                 BackgroundColor = Color.FromHex("#03A9F4");

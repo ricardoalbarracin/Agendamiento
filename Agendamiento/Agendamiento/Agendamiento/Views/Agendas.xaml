@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:Agendamiento;assembly=Agendamiento"
              x:Class="Agendamiento.Views.Agendas">
   <MasterDetailPage.Master>
-    <local:MasterPage x:Name="masterPage" />
+    <local:Menu x:Name="masterPage" />
   </MasterDetailPage.Master>
   <MasterDetailPage.Detail>
     <NavigationPage>

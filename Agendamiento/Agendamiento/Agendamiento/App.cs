@@ -12,7 +12,7 @@ namespace Agendamiento
         public App()
         {
             // The root page of your application
-            MainPage = new Agendas("ss");
+            MainPage = new Login();
             //if ((Current.Properties.ContainsKey("IsLoged")) && ((bool)Application.Current.Properties["IsLoged"]))
             //    MainPage = new NavigationPage(new Agendas(""));
             //else
